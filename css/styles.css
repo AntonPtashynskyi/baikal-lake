@@ -327,3 +327,124 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 33px 37px;
 }
+
+/* Best offer*/
+.offer-link {
+  position: relative;
+}
+
+.offer-bg-gradietn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    #000000 0%,
+    #ffffff 48.44%,
+    #ffffff 76.04%,
+    #000000 100%
+  );
+}
+
+.offer-tittle {
+  font-family: var(--secondary-font-family);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000;
+}
+.offer-card-img {
+  display: block;
+  border-radius: 6px;
+}
+
+.offer-card-tittle {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  color: #fff;
+}
+
+.offer-card-price {
+  font-family: var(--main-text-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+/* О байкале  */
+
+.about {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.about-tittle {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  color: var(--main-text-color);
+}
+
+.about-text {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #333333;
+}
+
+.about-lable {
+  font-family: var(--main-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #76767a;
+
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.about-video {
+  width: 640px;
+  height: 380px;
+  background-color: #7887b2;
+}
+
+.about-dscr-container {
+  width: 450px;
+  margin-right: 32px;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about-text-checked {
+  display: none;
+}
+
+.about-checkbox:checked + .about-text-checked {
+  display: block;
+}
+
+.read-less {
+  display: none;
+}
+
+.about-checkbox:checked ~ .about-lable .read-more {
+  display: none;
+}
+
+.about-checkbox:checked ~ .about-lable .read-less {
+  display: block;
+}
