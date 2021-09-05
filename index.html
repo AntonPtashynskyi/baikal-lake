@@ -36,11 +36,11 @@
     </div>
       <nav class="header-nav">
         <ul class="header-nav-lists">
-          <li><a href="/">Бронирование</a></li>
-          <li><a href="/">Экскурсии</a></li>
-          <li><a href="/">Туры на Байкал</a></li>
-          <li><a href="/">О Байкале</a></li>
-          <li><a href="/">О нас</a></li>
+          <li class="header-link-item" ><a class="header-link" href="#booking">Бронирование</a></li>
+          <li class="header-link-item" ><a class="header-link" href="#travel">Экскурсии</a></li>
+          <li class="header-link-item" ><a class="header-link" href="#direction">Туры на Байкал</a></li>
+          <li class="header-link-item" ><a class="header-link" href="#about">О Байкале</a></li>
+          <li class="header-link-item" ><a class="header-link" href="#about-us">О нас</a></li>
         </ul>
       </nav>
 </div>
@@ -49,18 +49,20 @@
     <!-- основной контент -->
     <main>
       <!-- первая секция -->
-      <section>
-        <h1>Путешествия по Байкалу</h1>
-        <p>
+      <section class="hero ">
+     <div class="container">
+          <h1 class="hero-title">Путешествия по Байкалу</h1>
+        <p class="hero-text">
           Туры по самому красивому месту России. Поехали с нами за новыми
           впечатлениями!
         </p>
-        <a href="#">подобрать тур</a>
-        <a href="#">down</a>
+        <a class="hero-link" href="#">подобрать тур</a>
+        <a class="hero-link-more" href="#travel">&#8595</a>
+     </div>
       </section>
       <!-- вторая секция !-->
       <section class="categories">
-        <div class="container">
+        <div class="container" id="travel">
           <h2 class="categories-title visually-hidden">Категория туров</h2>
           <ul class="categories-list">
             <li class="categories-list-items">
@@ -222,7 +224,7 @@
         </div>
       </section>
       <!-- третья секция -->
-      <section class="direction">
+      <section class="direction" id="direction">
 <div class="container">
           <h2 class="direction-title">Основные направления деятельности</h2>
         <ul class="direction-lists">
@@ -483,7 +485,7 @@
   </div>
       </section>
       <!-- Популярный направления -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
       <div class="about-dscr-container"> 
            <h2 class="about-tittle">Байкал</h2>
@@ -568,7 +570,7 @@
       </section>
       
       <!-- шестая секция -->
-      <section>
+      <section class="about-us" id="about-us">
         <h2>Байкальский отдых</h2>
         <b>Байкальский отдых с нами – это легко!</b>
         <img src="./images/Untitled-11.jpg" alt="Камнистый берег озера" width="256" height="256" />
@@ -632,6 +634,10 @@
             <p><span>50000</span>довольных туристов от 3 до 85 лет</p>
           </li>
         </ul>
+      </section>
+      <!-- восьмая секция -->
+      <section class="section" id="booking">
+        <h2>Бронирование</h2>
       </section>
     </main>
 
